@@ -1,4 +1,3 @@
-/* ===== GLOBAL ===== */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,6 @@ body {
     background: #ffffff;
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
     width: 100%;
     padding: 25px 70px;
@@ -29,7 +27,6 @@ body {
     gap: 35px;
 }
 
-/* NAV LINKS */
 .nav-links a {
     text-decoration: none;
     color: #444;
@@ -37,12 +34,10 @@ body {
     transition: 0.3s ease;
 }
 
-/* Hover effect */
 .nav-links a:hover {
     color: orange;
 }
 
-/* Active page (stay orange) */
 .nav-links a.active {
     color: orange;
     font-weight: bold;
@@ -52,7 +47,6 @@ body {
     width: 32px;
 }
 
-/* ===== HERO SECTION ===== */
 .hero {
     display: flex;
     align-items: center;
@@ -129,7 +123,6 @@ body {
     filter: drop-shadow(0 4px 25px rgba(0,0,0,0.2));
 }
 
-/* ===== STATS SECTION ===== */
 .stats {
     background: orange;
     color: white;
@@ -157,7 +150,6 @@ body {
     font-size: 16px;
 }
 
-/* ===== OUR PRODUCTS GRID ===== */
 .our-products {
     padding: 60px 50px;
     text-align: center;
@@ -203,7 +195,6 @@ body {
     color: #555;
 }
 
-/* ===== UPCOMING FLAVOURS ===== */
 .upcoming-flavours {
     padding: 60px 50px;
     text-align: center;
@@ -242,13 +233,11 @@ body {
     font-size: 20px;
 }
 
-/* Highlight specific words */
 .section-title span,
 .upcoming-flavours h2 span {
     color: orange;
 }
 
-/* ===== ABOUT HOME SECTION ===== */
 .about-home {
     padding: 80px 120px;
 }
@@ -284,7 +273,6 @@ body {
     font-weight: bold;
 }
 
-/* ===== CONTACT SECTION (CENTERED) ===== */
 .contact {
     padding: 80px 20px;
     background: #f9f9f9;
@@ -318,7 +306,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ===== MENU TOGGLE BASE ===== */
 #menu-toggle {
     display: none;
 }
@@ -329,10 +316,8 @@ html {
     cursor: pointer;
 }
 
-/* ===== MOBILE VIEW ===== */
 @media (max-width: 768px) {
 
-    /* NAVBAR */
     .navbar {
         padding: 15px 20px;
         position: relative;
@@ -342,7 +327,6 @@ html {
         font-size: 22px;
     }
 
-    /* SHOW 3 DOT ICON */
     .menu-icon {
         display: block;
         position: absolute;
@@ -351,7 +335,6 @@ html {
         z-index: 1001;
     }
 
-    /* HIDE NORMAL MENU */
     .nav-links {
         position: absolute;
         top: 60px;
@@ -371,7 +354,6 @@ html {
         z-index: 1000;
     }
 
-    /* WHEN CLICKED */
     #menu-toggle:checked ~ .nav-links {
         max-height: 300px;
         padding: 20px 0;
@@ -381,12 +363,10 @@ html {
         font-size: 20px;
     }
 
-    /* HIDE LOGIN ICON (optional) */
     .login-icon {
         display: none;
     }
 
-    /* HERO */
     .hero {
         flex-direction: column;
         padding: 30px 20px;
@@ -423,7 +403,6 @@ html {
         margin-top: 20px;
     }
 
-    /* STATS */
     .stats {
         flex-direction: column;
         text-align: center;
@@ -435,7 +414,6 @@ html {
         font-size: 18px;
     }
 
-    /* PRODUCTS */
     .product-grid {
         grid-template-columns: 1fr;
     }
@@ -445,7 +423,6 @@ html {
         height: auto;
     }
 
-    /* FLAVOURS */
     .flavour-grid {
         grid-template-columns: 1fr;
     }
@@ -454,7 +431,6 @@ html {
         width: 150px;
     }
 
-    /* ABOUT */
     .about-home {
         padding: 50px 20px;
     }
@@ -472,7 +448,6 @@ html {
         width: 260px;
     }
 
-    /* CONTACT */
     .contact {
         padding: 50px 20px;
     }
